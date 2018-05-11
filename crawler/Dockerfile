@@ -10,4 +10,5 @@ COPY . .
 # EXPOSE 80
 # ENV somevar ineed
 
-CMD [ "python", "./crawler.py" ]
+# CMD [ "python", "./crawler.py" ]
+CMD ["scrapy", "runspider", "spiders/quotespider.py"]
